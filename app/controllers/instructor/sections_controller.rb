@@ -16,4 +16,3 @@ end
   def section_params
     params.require(:section).permit(:title)
   end
-end
