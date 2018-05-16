@@ -1,5 +1,7 @@
-<div class="col-10 offset-1">
-<h1><%= @course.title %></h1>
+<br />
+
+<div class="booyah-box col-10 offset-1">
+  <h1><%= @course.title %></h1>
   <%= image_tag @course.image, class: 'img-fluid' %>
   <br />
   <div class="row">
@@ -24,9 +26,9 @@
     <% @course.sections.each do |section| %>
       <br /><br />
       <div class="section">
-        <h4>
+        <h3>
           <%= section.title %>
-        </h4>
+        </h3>
         <div class="row">
           <% section.lessons.each do |lesson| %>
             <div class="col-12 col-sm-6">
