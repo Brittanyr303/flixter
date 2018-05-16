@@ -1,22 +1,33 @@
 <br />
+  <div class="navbar-brand col-10 offset-1">
+    
+    <div class="col-10 offset-1">
+    <h1 class="text-truncate">Learn something today</h1>
+    </div>
+    
+    <br />
+    <br />
+    <% @courses.each do |course| %>
+    <div class="col-10 offset-1">
+      
+    <h3 class="text-truncate">
+    <%= link_to course.title, course_path(course) %>
+    </h3>
 
-<div class="booyah-box col-10 offset-1">
-  <h1 class="text-center">Learn something today</h1>
-  <hr>
-  
-  <% @courses.each do |course| %>
-      <h2 class='text-center'><%= link_to course.title, course_path(course) %></h2>
-     <% if course.image.present? %>
-     <%= image_tag course.image, class: 'img-fluid' %>
-     <% end %>
-      <div class='row'>
-          <div class="col-sm-8 col-12">
-              <%= course.description %>
-          </div>
-          <div class="col-sm-4 col-12 text-center">
-              <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
-          </div>
-      </div>
-      <br class='clr'>
-  <% end %>
-</div>
+    <h6 class="course_description">
+    <%= course.description %>
+    </h6>
+      
+    <br />
+    <%= image_tag course.image, class:'img-fluid', :size => '100X100' %>
+    <br />
+    <br />
+    <%= link_to 'More details...', course_path(course), class: 'btn btn-primary btn-large' %>
+    <br />
+    <br />
+    <br class="clr" />
+    </div>
+    <hr>
+    <% end %>
+    <br class="clr" />
+  </div>

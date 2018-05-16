@@ -82,6 +82,63 @@ body {
 
 .clr {
   clear: both;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.course_name {
+  justify-content: center;
+}
+
+.course_description {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.hr {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  width: 83%;
+}
+
+.img {
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 100px;
+  max-width: 100%;
+}
+
+.lesson {
+  background-color: black;
+  margin-top: 10px;
+  height: 130px;
+}
+
+.lesson a {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.lesson a b {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
 
