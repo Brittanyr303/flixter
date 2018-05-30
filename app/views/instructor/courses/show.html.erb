@@ -50,7 +50,10 @@
           <span class="fa fa-ellipsis-v"></span>
           <%= section.title %>
         </div>
-        
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+         New Lesson...
+       </button>
 
         <br class="clr" />
         <br class="clr" />
@@ -106,11 +109,6 @@
   </div>
 </div>
 
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
-  New Lesson...
-</button>
 
 
 
