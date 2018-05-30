@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   resource :dashboard, only: [:show]
   root 'static_pages#index'
   get 'privacy', to: 'static_pages#privacy'
-  get 'Team', to: 'static_pages#team'
-  get 'Careers', to: 'static_pages#careers'
+  get 'team', to: 'static_pages#team'
+  get 'careers', to: 'static_pages#careers'
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create
   end
